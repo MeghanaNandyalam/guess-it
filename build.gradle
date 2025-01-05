@@ -18,14 +18,12 @@
 
 buildscript {
     ext {
-
-
         agp_version3 = '7.2.0'
         agp_version2 = '7.3.0'
         agp_version1 = '8.0.0'
         agp_version = '7.4.0'
     }
-    ext.kotlin_version = '1.7.10'
+    ext.kotlin_version = '1.7.20'
     repositories {
         google()
         jcenter()
@@ -33,7 +31,7 @@ buildscript {
     dependencies {
         classpath "com.android.tools.build:gradle:$agp_version3"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-        classpath "android.arch.navigation:navigation-safe-args-gradle-plugin:1.0.0-rc02"
+        classpath "androidx.navigation:navigation-safe-args-gradle-plugin:2.5.3"
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
